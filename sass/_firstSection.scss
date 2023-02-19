@@ -1,0 +1,109 @@
+@use 'basics';
+
+
+.first-section {
+    display: flex;
+    column-gap: 160px;
+    margin-left: 40px;
+    margin-bottom: 141px;
+
+    @include basics.md {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    @include basics.sm {
+        flex-wrap: nowrap;
+        column-gap: 50px;
+    }
+
+
+    .text-wrapper {
+        width: 60%;
+        padding-top: 108px;
+
+        @include basics.md {
+            width: 100%;
+        }
+
+        @include basics.sm {
+            width: 80%;
+        }
+
+        .first-section-title {
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 48px;
+            margin-bottom: 24px;
+            font-weight: 500;
+            position: relative;
+
+            @include basics.md {
+                font-size: 36px;
+            }
+
+            @include basics.sm {
+                font-size: 28px;
+            }
+
+            &::before {
+                content: url("/img/orandžinis\ rutuliukas.png");
+                position: absolute;
+                left: 171px;
+                top: -28px;
+
+                @include basics.sm {
+                    left: 60px;
+                    top: -40px;
+                }
+            }
+        }
+
+
+        .first-section-description {
+            color: #4F4F4F;
+            font-size: 20px;
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+            font-weight: 400;
+
+            @include basics.sm {
+                font-size: 12px;
+            }
+
+        }
+
+        .start-button {
+            background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+            border-radius: 2px;
+            border: none;
+            padding-bottom: 26px;
+            padding-left: 29px;
+            padding-top: 27px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.155em;
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            padding-right: 30px;
+
+            @include basics.sm {
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+    }
+
+    .first-image-wrapper {
+        width: 20%;
+
+        @include basics.md {
+            width: 100%;
+        }
+
+        @include basics.sm {
+            width: 40%;
+        }
+    }
+}

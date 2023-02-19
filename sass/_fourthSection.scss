@@ -1,0 +1,102 @@
+@use 'basics';
+
+.fourth-section {
+    display: flex;
+    column-gap: 165px;
+    margin-bottom: 137px;
+
+    @include basics.md {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    @include basics.sm {
+        flex-wrap: nowrap;
+    }
+
+    .fourth-image-wrapper {
+        position: relative;
+
+        @include basics.sm {
+            right: 500px;
+        }
+
+        &::before {
+            content: url(/img/bg-3\,.jpg);
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+            z-index: -1;
+        }
+    }
+
+    .fourth-text-wrapper {
+        margin-top: 150px;
+
+        @include basics.sm {
+            position: relative;
+            right: 530px;
+        }
+
+        .fourth-section-title-1 {
+            color: #F3B562;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 17px;
+            font-weight: 500;
+
+            @include basics.sm {
+                font-size: 16px;
+            }
+
+        }
+
+        .fourth-section-title-2 {
+            color: #647B64;
+            font-size: 41px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            margin-top: 0;
+            font-weight: 500;
+
+            @include basics.sm {
+                font-size: 22px;
+            }
+        }
+
+        .fourth-section-description {
+            color: #4F4F4F;
+            letter-spacing: 0.04em;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            font-weight: 400;
+
+            @include basics.sm {
+                font-size: 12px;
+            }
+        }
+
+        .start-button {
+            background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+            border-radius: 2px;
+            border: none;
+            padding-bottom: 26px;
+            padding-left: 29px;
+            padding-top: 27px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.155em;
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            padding-right: 30px;
+
+            @include basics.sm {
+                font-size: 10px;
+                width: 310px;
+            }
+        }
+    }
+}

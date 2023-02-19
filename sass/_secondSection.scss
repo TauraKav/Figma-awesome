@@ -1,0 +1,368 @@
+@use 'basics';
+
+.second-section {
+    display: flex;
+    column-gap: 109px;
+    margin-bottom: 147px;
+
+    @include basics.xl {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    @include basics.sm {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+
+    .second-text-wrapper {
+        width: 35%;
+
+        @include basics.xl {
+            width: 50%;
+        }
+
+        @include basics.md {
+            width: 100%;
+        }
+
+        .bg-image {
+            position: relative;
+            background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+            width: 700px;
+            left: -280px;
+            padding-left: 280px;
+
+            @include basics.xl {
+                width: 800px;
+            }
+
+            @include basics.md {
+                width: 1100px;
+            }
+
+            @include basics.sm {
+                background: none;
+            }
+
+            .second-section-title-1 {
+                color: F3B562;
+                color: #F3B562;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin: 0;
+                padding-top: 31px;
+                padding-bottom: 17px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 15px;
+                }
+            }
+
+            .second-section-title-2 {
+                color: #647B64;
+                font-size: 41px;
+                text-transform: uppercase;
+                margin: 0;
+                padding-bottom: 27px;
+                padding-right: 56px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .second-section-description {
+            color: #4F4F4F;
+            letter-spacing: 0.04em;
+            margin-bottom: 40px;
+            font-weight: 400;
+
+            @include basics.sm {
+                font-size: 12px;
+            }
+        }
+
+        .start-button {
+            background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+            border-radius: 2px;
+            border: none;
+            padding-bottom: 26px;
+            padding-left: 29px;
+            padding-top: 27px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.155em;
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            padding-right: 30px;
+
+            @include basics.sm {
+                font-size: 10px;
+                width: 300px;
+            }
+        }
+    }
+
+    .trips-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 78px;
+        row-gap: 54px;
+        margin-top: 30px;
+        width: 65%;
+
+        @include basics.xl {
+            grid-template-columns: 1fr;
+        }
+
+
+        @include basics.md {
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        @include basics.sm {
+            column-gap: 42px;
+        }
+
+
+        .first-trip {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding-left: 40px;
+            padding-bottom: 45px;
+            padding-right: 27px;
+            padding-top: 50px;
+
+            .car-wrapper {
+                background-color: #647B64;
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                position: relative;
+
+                @include basics.sm {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                svg.car {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    @include basics.sm {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .trip-title {
+                color: #333333;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 26px;
+                margin-bottom: 6px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 12px;
+                }
+            }
+
+            .trip-description {
+                color: #4F4F4F;
+                font-size: 13px;
+                letter-spacing: 0.04em;
+                margin: 0;
+                font-weight: 400;
+
+                @include basics.sm {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .second-trip {
+            padding-top: 50px;
+
+            @include basics.xl {
+                padding-left: 40px;
+            }
+
+            .boat-wrapper {
+                background-color: white;
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                position: relative;
+
+                @include basics.sm {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                svg.boat {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    @include basics.sm {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+
+            }
+
+            .trip-title {
+                color: #333333;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 26px;
+                margin-bottom: 6px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 12px;
+                }
+            }
+
+            .trip-description {
+                color: #4F4F4F;
+                font-size: 13px;
+                letter-spacing: 0.04em;
+                margin: 0;
+                font-weight: 400;
+
+                @include basics.sm {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .third-trip {
+            padding-left: 40px;
+
+            .bus-wrapper {
+                background-color: white;
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                position: relative;
+
+                @include basics.sm {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                svg.bus {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    @include basics.sm {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .trip-title {
+                color: #333333;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 26px;
+                margin-bottom: 6px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 12px;
+                }
+            }
+
+            .trip-description {
+                color: #4F4F4F;
+                font-size: 13px;
+                letter-spacing: 0.04em;
+                margin: 0;
+                font-weight: 400;
+
+                @include basics.sm {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .fourth-trip {
+
+            @include basics.xl {
+                padding-left: 40px;
+            }
+
+            .road-wrapper {
+                background-color: white;
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                position: relative;
+
+                @include basics.sm {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                svg.road {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    @include basics.sm {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .trip-title {
+                color: #333333;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 26px;
+                margin-bottom: 6px;
+                font-weight: 500;
+
+                @include basics.sm {
+                    font-size: 12px;
+                }
+            }
+
+            .trip-description {
+                color: #4F4F4F;
+                font-size: 13px;
+                letter-spacing: 0.04em;
+                margin: 0;
+                font-weight: 400;
+
+                @include basics.sm {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

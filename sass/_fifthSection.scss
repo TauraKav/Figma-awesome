@@ -1,0 +1,126 @@
+@use 'basics';
+
+.fifth-section {
+
+    .first-part-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .fifth-section-title-1 {
+            color: #F3B562;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 17px;
+            font-weight: 500;
+
+            @include basics.sm {
+                font-size: 16px;
+            }
+
+        }
+
+        .fifth-section-title-2 {
+            color: #647B64;
+            font-size: 41px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            margin-top: 0;
+            font-weight: 500;
+
+            @include basics.sm {
+                font-size: 22px;
+            }
+        }
+
+        .arrows-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 35px;
+
+            @include basics.sm {
+                display: none;
+            }
+
+            .arrow-1 {
+                align-self: center;
+            }
+
+            .arrow-2 {
+                background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+                border-radius: 50%;
+                padding: 15px;
+                align-self: center;
+            }
+        }
+    }
+
+    .people {
+        display: grid;
+        grid-template-columns: repeat(4, 370px);
+        column-gap: 40px;
+        margin-bottom: 180px;
+
+        @include basics.sm {
+            position: relative;
+            right: 30px;
+        }
+
+        .person {
+            background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 40px;
+            padding-bottom: 32px;
+            padding-right: 15px;
+            padding-top: 49px;
+
+            .person-name {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                .first-line {
+                    color: #333333;
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+                    @include basics.sm {
+                        font-size: 12px;
+                    }
+                }
+
+                .second-line {
+                    color: #4F4F4F;
+                    font-size: 13px;
+                    letter-spacing: 0.04em;
+                    font-weight: 400;
+
+                    @include basics.sm {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .person-description {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                font-style: italic;
+                color: #4F4F4F;
+                margin-top: 24px;
+                margin-bottom: 0;
+                padding-right: 50px;
+                font-weight: 400;
+
+                @include basics.sm {
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+}
