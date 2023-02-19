@@ -27,7 +27,7 @@ body {
         }
 
         &::before {
-            content: url("/img/pilkas\ rutuliukas.png");
+            content: url('./img/pilkas\ rutuliukas.png');
             position: absolute;
             top: 580px;
             left: -90px;

@@ -65,7 +65,7 @@
             }
 
             &::before {
-                content: url(./img/Dots\ 8px.1.png);
+                content: url('./img/Dots\ 8px.1.png');
                 position: absolute;
                 bottom: -40px;
                 left: -30px;
@@ -165,7 +165,7 @@
             }
 
             &::after {
-                content: url(./img/bg-3.png);
+                content: url('./img/bg-3.png');
                 position: absolute;
                 top: 190px;
                 left: 170px;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -158,7 +157,7 @@ header .hamburger-menu {
   }
 }
 .first-section .text-wrapper .first-section-title::before {
-  content: url("/img/orandžinis rutuliukas.png");
+  content: url("./img/rutulys.png");
   position: absolute;
   left: 171px;
   top: -28px;
@@ -651,7 +650,7 @@ header .hamburger-menu {
   }
 }
 .third-section .parts-container .first-part::before {
-  content: url(/img/Dots\ 8px.1.png);
+  content: url("./img/Dots 8px.1.png");
   position: absolute;
   bottom: -40px;
   left: -30px;
@@ -751,7 +750,7 @@ header .hamburger-menu {
   }
 }
 .third-section .parts-container .third-part::after {
-  content: url(/img/bg-3.png);
+  content: url("./img/bg-3.png");
   position: absolute;
   top: 190px;
   left: 170px;
@@ -813,7 +812,7 @@ header .hamburger-menu {
   }
 }
 .fourth-section .fourth-image-wrapper::before {
-  content: url(/img/bg-3\,.jpg);
+  content: url(./img/bg-3\,.jpg);
   position: absolute;
   bottom: -60px;
   right: -60px;
@@ -1202,7 +1201,7 @@ body .content {
   }
 }
 body .content::before {
-  content: url("/img/pilkas rutuliukas.png");
+  content: url("./img/pilkas rutuliukas.png");
   position: absolute;
   top: 580px;
   left: -90px;
